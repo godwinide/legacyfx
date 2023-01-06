@@ -1,4 +1,5 @@
-<html class="no-js" lang="en"><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<html class="no-js" lang="en">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -16,7 +17,8 @@
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/slicknav.min.css">
     <!-- amchart css -->
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
     <!-- others css -->
     <link rel="stylesheet" href="/assets/css/typography.css">
     <link rel="stylesheet" href="/assets/css/default-css.css">
@@ -24,8 +26,8 @@
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <!-- modernizr css -->
     <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
-   <link rel="stylesheet" href="/assets/css/stockmenu.css"> 
-      
+    <link rel="stylesheet" href="/assets/css/stockmenu.css">
+
 </head>
 
 <body>
@@ -43,28 +45,30 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                  
-                    
-				<a href="/dashboard"><img src="/assets/images/icon/logo.png" alt="logo"></a>	
+
+
+                    <a href="/dashboard"><img src="/assets/images/icon/logo.png" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
                 <div class="menu-inner">
                     <nav>
-                    
+
                         <ul class="metismenu" id="menu">
-                        
-                        <li> 
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-dashboard"></i><span>Dashboard
+
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="fa fa-dashboard"></i><span>Dashboard
                                     </span></a>
                                 <ul class="collapse">
                                     <li><a href="/dashboard">Dashboard</a></li>
-                                   
+
                                 </ul>
                             </li>
-                           
+
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-user-plus"></i><span>My Account
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="fa fa-user-plus"></i><span>My Account
                                     </span></a>
                                 <ul class="collapse">
                                     <li><a href="">Edit Profile</a></li>
@@ -72,36 +76,41 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-history"></i><span>Transactions</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="fa fa-history"></i><span>Transactions</span></a>
                                 <ul class="collapse">
                                     <li><a href="/history">Trade History</a></li>
-                                    
+
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-money"></i><span>Deposit</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="fa fa-money"></i><span>Deposit</span></a>
                                 <ul class="collapse">
-                                    <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">New Request</a></li>
-                                      <li><a href="/deposit">History</a></li>
-                                  
+                                    <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">New
+                                            Request</a></li>
+                                    <li><a href="/deposit">History</a></li>
+
                                 </ul>
                             </li>
-                            
+
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-bank"></i><span>Withdrawal</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="fa fa-bank"></i><span>Withdrawal</span></a>
                                 <ul class="collapse">
                                     <li><a href="/withdrawal">New Request</a></li>
-                                      <li><a href="/withdraw-history">History</a></li>
-                                  
+                                    <li><a href="/withdraw-history">History</a></li>
+
                                 </ul>
                             </li>
-                           
-                           
+
+
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-power-off"></i> <span>Logout</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-power-off"></i>
+                                    <span>Logout</span></a>
                                 <ul class="collapse">
                                     <li><a href="/logout">Logout</a></li>
-                                    
+
                                 </ul>
                             </li>
                         </ul>
@@ -124,52 +133,64 @@
                         </div>
                     </div>
                     <!-- profile info & task notification -->
-                    
-                        </div>
-                        <div class="user-profile pull-right">
-                            <h5 class="text-white"><%= req.user.currency%> <%=comma(req.user.balance)%></h5>
-                            <div class="dropdown-menu">
-                          </div>
+
+                </div>
+                <div class="user-profile pull-right">
+                    <h5 class="text-white">
+                        <%= req.user.currency%>
+                            <%=comma(req.user.balance)%>
+                    </h5>
+                    <div class="dropdown-menu">
+                    </div>
                 </div>
             </div>
-          <!-- header area end -->
+            <!-- header area end -->
             <!-- page title area start -->
-           <div class="top">
-            <%-include("../partials/messages") %> 
-  
-  <ul class="menu">
-    
-    <li><a href="/dashboard" >Trade</a></li>
-    <li><a href="/history" >Trade History</a></li>
-    <li><a href="/withdrawal" class="selected">Withdrawal</a></li>
-    <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Deposit</a></li>
-  </ul>
-</div>
+            <div class="top">
+                <%-include(".. /partials/messages") %>
+
+                    <ul class="menu">
+
+                        <li><a href="/dashboard">Trade</a></li>
+                        <li><a href="/history">Trade History</a></li>
+                        <li><a href="/withdrawal" class="selected">Withdrawal</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Deposit</a></li>
+                    </ul>
+            </div>
             <!-- page title area end -->
             <div class="main-content-inner">
                 <div class="row">
                     <!-- seo fact area start -->
-                               
+
                     <!-- seo fact area end -->
                     <!-- Social Campain area start -->
                     <div class="col-lg-4 mt-5">
                         <div class="card">
                             <div class="card-body pb-0">
                                 <h4 class="header-title">Account Statement</h4>
-                                
-                
+
+
                                 <ul class="list-group">
-                                    <li class="list-group-item">Balance: <strong><%=req.user.currency%><%=req.user.balance%></strong></li>
-                                    <li class="list-group-item">Status :  <span class="badge badge-success"> <%=req.user.verify_status%></span> </li>
+                                    <li class="list-group-item">Balance: <strong>
+                                            <%=req.user.currency%>
+                                                <%=req.user.balance%>
+                                        </strong></li>
+                                    <li class="list-group-item">Status : <span class="badge badge-success">
+                                            <%=req.user.verify_status%>
+                                        </span> </li>
                                     <!-- <li class="list-group-item">IP :  <span class="badge badge-light"> <?php echo $row_access['IPaddress'];?></span> </li> -->
-                                    <li class="list-group-item">Currency  :  <span class="badge badge-light"><%=req.user.currency%></span></li>
-                                    <li class="list-group-item">Country  :  <span class="badge badge-light"> <%=req.user.country%></span></li> 
+                                    <li class="list-group-item">Currency : <span class="badge badge-light">
+                                            <%=req.user.currency%>
+                                        </span></li>
+                                    <li class="list-group-item">Country : <span class="badge badge-light">
+                                            <%=req.user.country%>
+                                        </span></li>
                                 </ul>
-                            
-                        
-                    <!-- Active Items end -->  
+
+
+                                <!-- Active Items end -->
                             </div>
-                            
+
                         </div>
                     </div>
                     <!-- Social Campain area end -->
@@ -178,180 +199,209 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4><span class="fa fa-bank"> Withdrawal</span></h4>
-                                
+
                                 <p>
-                                <hr>
-                                 <p> 
+                                    <hr>
+                                <p>
 
-                                <div >
-                                
-			                    <p>
-								
-								<p><img src="/assets/images/pmhov.jpg"></p>
-								
-								<form action="/withdrawal/pm" method="post" >
-                                    <%-include("../partials/messages") %>
-                                    <input type="hidden" name="method" value="bitcoin">
-                                <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">Amount</label>
-                                            <input class="form-control" name="amount" type="text" value=" " id="amount" onKeyUp="javascript:this.value=Comma(this.value); sync()"  required  >
-                                        </div>
-                                        
-                                          <script>
-							 
-							 function Comma(Num)
- {
-       Num += '';
-       Num = Num.replace(/,/g, '');
+                                <div>
 
-       x = Num.split('.');
-       x1 = x[0];
+                                    <p>
 
-       x2 = x.length > 1 ? '.' + x[1] : '';
+                                    <p><img src="/assets/images/pmhov.jpg"></p>
 
-       
-         var rgx = /(\d)((\d{3}?)+)$/;
+                                    <form action="/withdrawal/pm" method="post">
+                                        <%-include(".. /partials/messages") %>
+                                            <input type="hidden" name="method" value="bitcoin">
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-form-label">Amount</label>
+                                                <input class="form-control" name="amount" type="text" value=" "
+                                                    id="amount"
+                                                    onKeyUp="javascript:this.value=Comma(this.value); sync()" required>
+                                            </div>
 
-       while (rgx.test(x1))
+                                            <script>
 
-       x1 = x1.replace(rgx, '$1' + ',' + '$2');
-     
-       return x1 + x2;       
-        
- }
- 
- 
-                             </script> 
-                             
-                     
-                          
-                             
-                   		
-                                      <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">Account No</label>
-                                            <input class="form-control" name="accno" type="text" value=" " id="example-text-input"  required>
-                                        </div>
-                                        
-                                         <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">Account Name</label>
-                                            <input class="form-control" name="accname" type="text" value=" " id="example-text-input"  required>
-                                        </div>
-                                        
-                                         <div class="form-group">
-                                           
-                                            <button type="submit" name="pm" class="btn btn-success"><li class="fa fa-dollar"></li> Withdraw</button>
-                                        </div>
-                                
-                                </form>
-                                
-                           
-                              
-                                </p>
-                                
-                                
-                               <!-- form region -->
-                               
-                             
-                                
-                            
-                                
+                                                function Comma(Num) {
+                                                    Num += '';
+                                                    Num = Num.replace(/,/g, '');
+
+                                                    x = Num.split('.');
+                                                    x1 = x[0];
+
+                                                    x2 = x.length > 1 ? '.' + x[1] : '';
+
+
+                                                    var rgx = /(\d)((\d{3}?)+)$/;
+
+                                                    while (rgx.test(x1))
+
+                                                        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+
+                                                    return x1 + x2;
+
+                                                }
+
+
+                                            </script>
+
+
+
+
+
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-form-label">Account
+                                                    No</label>
+                                                <input class="form-control" name="accno" type="text" value=" "
+                                                    id="example-text-input" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-form-label">Account
+                                                    Name</label>
+                                                <input class="form-control" name="accname" type="text" value=" "
+                                                    id="example-text-input" required>
+                                            </div>
+
+                                            <div class="form-group">
+
+                                                <button type="submit" name="pm" class="btn btn-success">
+                                                    <li class="fa fa-dollar"></li> Withdraw
+                                                </button>
+                                            </div>
+
+                                    </form>
+
+
+
+                                    </p>
+
+
+                                    <!-- form region -->
+
+
+
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Statistics area end -->
                     <!-- Advertising area start -->
-                   						<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>
-<script>
-function myFunction2() {
-  var copyText = document.getElementById("myInput2");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>
-                                <div class="modal fade" id="exampleModalCenter">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">Deposit Fund</h5>
-                                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-                                            </div>
-                                            <div class="modal-body">
-                                            
-                                                <p>                                               
-                                                <div class="form-group">
-						
-                                                    <label for="example-text-input" class="col-form-label">Please Copy the Address </label>
-                                        <label for="example-text-input" class"col-form-label">And send the amount you want to invest.</label></label>            
-                                            <h7><br><p style="color:#FF0000";>Bitcoin </p><input class="float-center" type="text" value="12SPtPmu9JTHoVyjrpyGAcS9YKgyrUuXFi"  size="40" id="myInput" readonly>
-<button class="btn btn-danger" onclick="return myFunction()"> Copy Wallet </button></h7>
-											<center><img class="img-responsive" style="margin: auto" src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=12SPtPmu9JTHoVyjrpyGAcS9YKgyrUuXFi"></center>
-											
-											<h7><br> <p style="color:#FF0000";>Ethereum </p><input class="float-center" type="text" value="0x1D601B77118e622C845fF264CBc2c956B580298c"  size="40"  id="myInput2" readonly>
-<button class="btn btn-danger" onclick="myFunction2()"> Copy Wallet </button></h7>
-<center><img class="img-responsive" style="margin: auto" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=Ethereum:0x1D601B77118e622C845fF264CBc2c956B580298c"></center>
-                                        </div>
-										 <label for="example-text-input" class"col-form-label">Investment range from 150 USD to 50000 USD</label></label>  
-                                         
-                                                 </p>
-                                            </div>
-                                            <div class="modal-footer" id="response">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                               <button type="button" id="clk" name="depo" class="btn btn-flat btn-success btn-lg btn-block" >Deposited</button>  
-                                              </div>
-                                              <div id="d-alert" style="display: none;">
-                                                <form style="margin: 2em;" method="post" action="/deposit">
-                                                 <div class="form-gp">
-                                                     <label for="exampleInputEmail1">Amount</label>
-                                                     <input type="number" name="amount">
-                                                 </div>
-                                                 <div class="modal-footer" id="response">
-                                                    <button class="btn btn-flat btn-success btn-lg btn-block" >Confirm</button>  
-                                                   </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+                    <script>
+                        function myFunction() {
+                            var copyText = document.getElementById("myInput");
+                            copyText.select();
+                            copyText.setSelectionRange(0, 99999)
+                            document.execCommand("copy");
+                            alert("Copied the text: " + copyText.value);
+                        }
+                    </script>
+                    <script>
+                        function myFunction2() {
+                            var copyText = document.getElementById("myInput2");
+                            copyText.select();
+                            copyText.setSelectionRange(0, 99999)
+                            document.execCommand("copy");
+                            alert("Copied the text: " + copyText.value);
+                        }
+                    </script>
+                    <div class="modal fade" id="exampleModalCenter">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Deposit Fund</h5>
+                                    <button type="button" class="close"
+                                        data-dismiss="modal"><span>&times;</span></button>
                                 </div>
-                           
-                                          
-                                         
-                                                 </p>
-                                            </div>
-                                            <div class="modal-footer">
-                                        
-                                           </div></form>
-                                        </div>
+                                <div class="modal-body">
+
+                                    <p>
+                                    <div class="form-group">
+
+                                        <label for="example-text-input" class="col-form-label">Please Copy the Address
+                                        </label>
+                                        <label for="example-text-input" class"col-form-label">And send the amount you
+                                            want to invest.</label></label>
+                                        <h7><br>
+                                            <p style="color:#FF0000" ;>Bitcoin </p><input class="float-center"
+                                                type="text" value="3Mctr8azUS5D1FU24RLQX9NuUs5g5U5xjk" size="40"
+                                                id="myInput" readonly>
+                                            <button class="btn btn-danger" onclick="return myFunction()"> Copy Wallet
+                                            </button>
+                                        </h7>
+                                        <center><img class="img-responsive" style="margin: auto"
+                                                src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=3Mctr8azUS5D1FU24RLQX9NuUs5g5U5xjk">
+                                        </center>
+
+                                        <h7><br>
+                                            <p style="color:#FF0000" ;>Ethereum </p><input class="float-center"
+                                                type="text" value="0xB9535F1c6b9cF9260CdaE4Fc38aaF7Cc3d92B685" size="40"
+                                                id="myInput2" readonly>
+                                            <button class="btn btn-danger" onclick="myFunction2()"> Copy Wallet
+                                            </button>
+                                        </h7>
+                                        <center><img class="img-responsive" style="margin: auto"
+                                                src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=Ethereum:0xB9535F1c6b9cF9260CdaE4Fc38aaF7Cc3d92B685">
+                                        </center>
                                     </div>
-                                    
+                                    <label for="example-text-input" class"col-form-label">Investment range from 150 USD
+                                        to 50000 USD</label></label>
+
+                                    </p>
                                 </div>
-                           
-                    <!-- map area end -->
-                    <!-- testimonial area start -->
-                   
-                    <!-- testimonial area end -->
+                                <div class="modal-footer" id="response">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="button" id="clk" name="depo"
+                                        class="btn btn-flat btn-success btn-lg btn-block">Deposited</button>
+                                </div>
+                                <div id="d-alert" style="display: none;">
+                                    <form style="margin: 2em;" method="post" action="/deposit">
+                                        <div class="form-gp">
+                                            <label for="exampleInputEmail1">Amount</label>
+                                            <input type="number" name="amount">
+                                        </div>
+                                        <div class="modal-footer" id="response">
+                                            <button class="btn btn-flat btn-success btn-lg btn-block">Confirm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    </p>
                 </div>
+                <div class="modal-footer">
+
+                </div>
+                </form>
             </div>
         </div>
-        <!-- main content area end -->
-        <!-- footer area start-->
-        <footer>
-            <div class="footer-area">
-                <p>© Copyright 2019 <?php echo sitename?>. All right reserved. </p>
-            </div>
-        </footer>
-        <!-- footer area end-->
+
+    </div>
+
+    <!-- map area end -->
+    <!-- testimonial area start -->
+
+    <!-- testimonial area end -->
+    </div>
+    </div>
+    </div>
+    <!-- main content area end -->
+    <!-- footer area start-->
+    <footer>
+        <div class="footer-area">
+            <p>© Copyright 2019
+                <?php echo sitename?>. All right reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- footer area end-->
     </div>
     <!-- page container area end -->
     <!-- offset area start -->
@@ -566,8 +616,8 @@ function myFunction2() {
     <!-- others plugins -->
     <script src="/assets/js/plugins.js"></script>
     <script src="/assets/js/scripts.js"></script>
-    
-   
+
+
 </body>
 
 </html>
